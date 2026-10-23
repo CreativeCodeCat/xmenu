@@ -384,7 +384,7 @@ getoptions(int argc, char *argv[])
 			break;
 		case 'X':
 			passclickflag = 1;
-			/* PASSTHROUGH */
+			__attribute__((fallthrough));
 		case 'x':
 			rootmodeflag = 1;
 			s = optarg;
